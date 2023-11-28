@@ -30,7 +30,7 @@ gulp.task("public-scss", function () {
 gulp.task("minify-js", function () {
   const stream = gulp
     .src([publicPaths.js.src])
-    .pipe(minify())
+    .pipe(minify({ noSource: true }))
     .pipe(browserSync.stream());
 
   return stream.pipe(gulp.dest(publicPaths.js.dest));

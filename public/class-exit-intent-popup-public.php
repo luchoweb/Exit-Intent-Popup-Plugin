@@ -22,9 +22,9 @@ class Exit_Intent_Popup_Public {
 
 	public function enqueue_scripts() {
 
-		wp_enqueue_script( 'jquery-exitintent', plugin_dir_url( __FILE__ ) . 'assets/js/jquery.exitintent.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'jquery-exitintent', plugin_dir_url( __FILE__ ) . 'assets/js/jquery.exitintent-min.js', array( 'jquery' ), $this->version, false );
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/exit-intent-popup.min.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/exit-intent-popup-min.js', array( 'jquery' ), $this->version, false );
 
 		wp_localize_script($this->plugin_name, 'my_ajax_object', array('ajax_url' => admin_url( 'admin-ajax.php')));
 
