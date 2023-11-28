@@ -18,7 +18,6 @@ function setPopupCookie() {
 		},
 		dataType: "json",
 		success: function (response) {
-      console.log(response)
 			$(".exit-intent-popup__title").text(response.title);
 			$(".exit-intent-popup__subhead").text(response.subhead);
 			$(".exit-intent-popup__content").text(response.content);
