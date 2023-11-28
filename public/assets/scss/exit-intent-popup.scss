@@ -8,7 +8,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 99999;
 
   &.opened {
     display: flex;
@@ -177,6 +177,7 @@
       cursor: pointer;
       font-size: 1.5rem;
       font-weight: normal;
+      height: 30px;
       position: absolute;
       padding: 0;
       right: .5rem;
